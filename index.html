@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人待办智能助手</title>
+<meta name="description" content="运行在 Windows 电脑上的个人待办与生活决策助手">
+<style>
+  :root{--ink:#1a2330; --muted:#5d6878; --line:#e3e7ee; --bg:#f6f7f9; --card:#fff; --accent:#0f7a8a; --soft:#e6f3f5}
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink); font:15px/1.75 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:860px; margin:0 auto; padding:0 16px}
+  header{padding:56px 0 36px}
+  header h1{margin:0 0 8px; font-size:32px; letter-spacing:-.01em}
+  header p{margin:0; color:var(--muted); font-size:16px}
+  .tag{display:inline-block; margin-top:16px; padding:3px 10px; border-radius:999px; background:var(--soft); color:var(--accent); font-size:13px; font-weight:600}
+  h2{font-size:20px; margin:44px 0 14px}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px}
+  .card b{display:block; margin-bottom:4px}
+  .card span{color:var(--muted); font-size:14px}
+  figure{margin:14px 0 0; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px}
+  figure img{display:block; width:100%; height:auto; border-radius:8px}
+  figcaption{margin-top:8px; color:var(--muted); font-size:13px}
+  ol{padding-left:20px}
+  table{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; font-size:14px}
+  td{padding:10px 14px; border-top:1px solid var(--line); vertical-align:top}
+  tr:first-child td{border-top:0}
+  td:first-child{width:120px; color:var(--muted)}
+  footer{margin:56px 0 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>个人待办智能助手</h1>
+    <p>运行在 Windows 电脑上的个人待办与生活决策助手：记下一件事，它帮你把准备工作做好。</p>
+    <span class="tag">个人自用工具 · 非商业运营</span>
+  </header>
+
+  <h2>它能做什么</h2>
+  <div class="grid">
+    <div class="card"><b>记录待办</b><span>按天整理待办事项，支持思考笔记、附件和会议纪要。</span></div>
+    <div class="card"><b>问答理解需求</b><span>通过几道选择题了解你的要求，一页答完，不反复打扰。</span></div>
+    <div class="card"><b>结合习惯给建议</b><span>参考你以往的选择，在挑礼物、选餐厅等场景给出建议，你这次说的条件优先。</span></div>
+    <div class="card"><b>出行与提醒</b><span>根据路况估算出发时间，到点提醒；一句话设置起床闹钟。</span></div>
+    <div class="card"><b>购物参考</b><span>确定要买某件商品后，汇总同款在不同店铺的到手价格、店铺类型和预计送达时间，整理成几个可选方案。</span></div>
+    <div class="card"><b>由你决定</b><span>助手只整理信息，下单由你自己点击跳转到商品页面完成。</span></div>
+  </div>
+
+  <h2>界面预览</h2>
+  <figure><img src="img/ask.png" alt="问答界面"><figcaption>需求问答：同一件事的问题放在一页，上次的选择会自动带上。</figcaption></figure>
+  <figure><img src="img/route.png" alt="出行时间"><figcaption>出行规划：按路况估算出发时间，可一键开启出发提醒。</figcaption></figure>
+  <figure><img src="img/alarm.png" alt="闹钟"><figcaption>闹钟：一句话设置，卡片显示距离响铃还有多久。</figcaption></figure>
+
+  <h2>购物参考如何工作</h2>
+  <ol>
+    <li>你在待办里确定要买的商品（例如在礼物建议中选中一项）。</li>
+    <li>助手按商品名称查询公开的商品信息，只保留同一款商品，排除配件和明显不同的规格。</li>
+    <li>结合你的预算、需要到手的日期和用途（自用或送礼），整理出几个可选方案，并说明各自的特点。</li>
+    <li>你点击方案，跳转到对应商品页面自行下单；助手不代为下单、不接触支付。</li>
+  </ol>
+
+  <h2>基本信息</h2>
+  <table>
+    <tr><td>运行环境</td><td>Windows 10 / 11 个人电脑，本地运行</td></tr>
+    <tr><td>使用者</td><td>开发者本人及家人</td></tr>
+    <tr><td>数据存放</td><td>待办内容保存在使用者自己的电脑上，不上传到第三方服务器</td></tr>
+    <tr><td>商品信息来源</td><td>各电商联盟开放平台提供的公开商品数据接口</td></tr>
+  </table>
+
+  <footer>个人待办智能助手 · 个人开发 · 更新于 2026 年 10 月</footer>
+</div>
+</body>
+</html>
